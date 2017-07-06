@@ -1,0 +1,19 @@
+img {
+  width:100%;
+  min-height: 200px;
+}
+.btn-success {
+  margin-top: 17px;
+  float: right;
+  width: 80%;
+  font-size: 20px;
+}
+#receipt{
+  display: none;
+  font-size: 20px;
+}
+#receipt-color {
+  padding: 10px;
+  display: inline-block;
+  width: 20
+}

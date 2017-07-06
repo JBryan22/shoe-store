@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shoe Store</h1>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="img/running.jpg" alt="running shoe">
+        </div>
+        <div class="col-md-3">
+          <img src="img/hikinh.jpg" alt="hiking shoe">
+        </div>
+        <div class="col-md-3">
+          <img src="img/business.jpg" alt="business shoe">
+        </div>
+        <div class="col-md-3">
+          <img src="img/birken.jpeg" alt="birkenstock sandal">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Select Size:</label>
+            <select id="shoe-size" class="form-control">
+              <option>8</option>
+              <option>8.5</option>
+              <option>9</option>
+              <option>9.5</option>
+              <option>10</option>
+              <option>10.5</option>
+              <option>11</option>
+              <option>11.5</option>
+              <option>12</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Select a color:</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+        </div>
+      </div>
+
+      <label>Select Delivery Method:</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="delivery" value="">
+          Express Delivery (3-7 days)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="delivery" value="">
+          Standard Delivery (8-15 days)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="delivery" value="">
+          Store Pickup
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="name">
+              Enter name:
+            </label>
+            <input id="name" class="form-control" type="text">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="birthday">
+            Birth Date:
+          </label>
+          <input id="birthday" class="form-control" type="date">
+        </div>
+      </div>
+
+      <div class="well form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="address">Address:</label>
+            <input id="address" type="text" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="city">City:</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label>State:</label>
+            <select id="state" class="form-control">
+              <option>WA</option>
+              <option>OR</option>
+              <option>CA</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="zip">Zip:</label>
+            <input id="zip" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="form-group">
+              <label for="email" >Email:</label>
+              <input id="email" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button id="submit" class="btn btn-success" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="receipt" class="well">
+        <h1>Thank You <span id="receipt-name"></span></h1>
+        <h2>Your Order Summary:</h2>
+        <p>Color: <span id="receipt-color"> </span></p>
+        <p>Size: <span id="receipt-size"></span></p>
+        <p>Shipping Address: <span id="receipt-address"></span></p>
+        <p>Confirmation Email: <span id="receipt-email"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
